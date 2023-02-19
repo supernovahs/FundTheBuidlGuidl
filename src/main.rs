@@ -97,31 +97,31 @@ async fn get_builders() -> Result<()> {
                 println!("\n {} Need Funding!!\nETH_BALANCE: {}\nCAP: {} \nWithdraw: {stream_balance} ",check,ether,eth_balance);  
                 unfunded_address_array[counter] = stream_address;
                 let num: String = format_units(eth_balance, "ether").unwrap();
-                println!("num{}",num);
+               
                 if num == "1.500000000000000000"  {
-                    println!("lol");
+                   
                     (unfunded_cap_array[counter] = 1.5);
                 }    
                 else if num == "2.000000000000000000" {
-                    println!("lol");
+                    
 
                      unfunded_cap_array[counter] = 2.0;
                  } 
                  else if num == "0.500000000000000000"{
-                    println!("lol");
+                   
 
                     unfunded_cap_array[counter] = 0.5;
                  }
                 else if num == "1.000000000000000000" {
-                    println!("lol");
+                   
 
                     unfunded_cap_array[counter] = 1.0;
                 }
                 else{
-                    println!("LOL");
+                 
 
                 }
-                println!("unfunded cap array{}",unfunded_cap_array[counter]);
+               
                
                 counter +=1;
             }
